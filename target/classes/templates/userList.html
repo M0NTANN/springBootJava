@@ -18,8 +18,8 @@
             </thead>
             <tbody>
             <tr th:each="user : ${users}">
-                <td th:text="${user.id}"></td>
-                <td th:text="${user.name}"></td>
+                <td class="id" th:text="${user.id}"></td>
+                <td class="Name" th:text="${user.name}"></td>
                 <td><a th:href="@{userUpd/{id}(id=${user.id})}">Edit</a></td>
                 <td><a th:href="@{userDel/{id}(id=${user.id})}">Delete</a></td>
             </tr>
